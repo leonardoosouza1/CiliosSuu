@@ -21,3 +21,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+src/pages/Home.tsx
+src/assets/images/Ativo 1@4x.png
+src/assets/images/Ativo 2@4x.png

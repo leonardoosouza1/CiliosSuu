@@ -3,8 +3,8 @@
 import { useHistory } from 'react-router-dom';
 
 
-import ilustrationImg from '../assets/images/illustration.svg';
-import logoImg from '../assets/images/teste.svg';
+
+import logoImg from '../assets/images/Ativo 1@4x.png';
 import googleIconImg from '../assets/images/google-icon.svg';
 import { Button } from '../components/Button';
 
@@ -27,32 +27,69 @@ export function Home() {
     }
 
     return (
-        <div id="page-auth">
-            <aside>
-                <img src={ilustrationImg} alt="Ilustração" />
-                <strong>Se tu dix</strong>
-                <p>Não seje tanso e tira suas duvidas sobre tainha</p>
-            </aside>
-            <main>
-                <div className="main-content">
-                    <img src={logoImg} alt="Fala feio" />
-                    <button onClick={handleCreateRoom} className="create-room">
-                        <img src={googleIconImg} alt="" />
-                        Cria sua sala com o Google
-                    </button>
-                    <div className="separator" >
-                        Ou entre em uma sala abaixo
-                    </div>
-                    <form>
-                        <input type="text"
-                            placeholder="Digite o códido da sala"
-                        />
-                        <Button type="submit">
-                            Entrar na sala
-                        </Button>
-                    </form>
+        <div id="main">
+            <nav id="nav">
+                <div>
+                    <img src={logoImg} alt="logo" />
+                    <input type="search"
+                        placeholder="Busca"
+                    />
                 </div>
-            </main>
+            </nav>
+            <div id="page-auth">
+                <aside>
+                    <div>
+                        <tbody>
+                            <tr>
+                                <h1>Produto</h1>
+                            </tr>
+                            <tr>
+                                <h1>Produto</h1>
+                            </tr>
+                            <tr>
+                                <h1>Produto</h1>
+                            </tr>
+                            <tr>
+                                <h1>Produto</h1>
+                            </tr>
+                            <tr>
+                                <h1>Produto</h1>
+                            </tr>
+                            <tr>
+                                <h1>Produto</h1>
+                            </tr>
+                            <tr>
+                                <h1>Produto</h1>
+                            </tr>
+                            <tr>
+                                <h1>Produto</h1>
+                            </tr>
+                        </tbody>
+                    </div>
+                </aside>
+                <main>
+                    <div className="main-content">
+                        <button onClick={handleCreateRoom} className="create-room">
+                            <img src={googleIconImg} alt="" />
+                            Faça login com o Google
+                        </button>
+                        <div className="separator" >
+                            Ou entre com uma conta abaixo
+                        </div>
+                        <form>
+                            <input type="text"
+                                placeholder="Digite seu e-mail"
+                            />
+                            <input type="password"
+                                placeholder="Digite sua senha"
+                            />
+                            <Button type="submit">
+                                Entrar
+                            </Button>
+                        </form>
+                    </div>
+                </main>
+            </div>
         </div>
     )
 }
